@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Search 引擎</title>
+    <style>
+        /* 全局样式喵 */
+        body {
+            background-color: #000; /* 黑背景喵 */
+            color: #00ff00; /* 绿色字体喵 */
+            font-family: 'Courier New', Courier, monospace; /* 黑客常用等宽字体喵 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .search-box {
+            display: flex;
+            width: 80%;
+            max-width: 600px;
+        }
+        .search-box input {
+            flex: 1;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            font-size: 1.2rem;
+            outline: none;
+        }
+        .search-box button {
+            padding: 1rem 2rem;
+            background: #000;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        .search-box button:hover {
+            background: #00ff00;
+            color: #000;
+        }
+        .footer {
+            position: absolute;
+            bottom: 1rem;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">H4CK3R.SEARCH</div>
+    <form class="search-box" action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="输入关键字..." autofocus />
+        <button type="submit">搜索</button>
+    </form>
+    <div class="footer">Powered by Neko Labs © 2025</div>
+</body>
+</html>
